@@ -43,7 +43,13 @@ Digite o nome da pessoa: '''))
           repete = 0
           input("Pressione ENTER para continuar")
           os.system('cls' if os.name == 'nt' else 'clear')
-            
+
+        elif nome.strip() == (""):
+          print("ERRO - O nome não pode estar em branco")
+          input("Pressione ENTER para continuar")
+          os.system('cls' if os.name == 'nt' else 'clear')
+          repete = 1
+
         else:  
           idade = int(input('''Digite a idade da pessoa: '''))
           if idade < 0:
@@ -53,6 +59,7 @@ Digite o nome da pessoa: '''))
             repete = 1
           else:
             repete = 0
+            nome = nome.strip()
             adicionar_pessoa(nome, idade)
             print(f"ADICIONADO: {lista_pessoas[-1]}")
             input("Pressione ENTER para continuar")
@@ -76,7 +83,7 @@ Digite o nome da pessoa: '''))
 Digite o número referente à pessoa ou "menu" para voltar ao menu principal: ''')
         codigo_escolhido = int(codigo_escolhido)
         if (codigo_escolhido < len(lista_pessoas) and codigo_escolhido >= 0):
-          print(f"REMOVIDO: Usuário: {lista_pessoas[codigo_escolhido]}")
+          print(f"REMOVIDO: Usuário - {lista_pessoas[codigo_escolhido]}")
           del lista_pessoas[codigo_escolhido]
           repete = 0
           input("Pressione ENTER para continuar")
