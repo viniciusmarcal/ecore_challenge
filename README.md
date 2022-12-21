@@ -16,4 +16,4 @@ Desafio Técnico - e-Core: LISTA DE PESSOAS
   foi usada a orientação de objeto, enquanto na criação da lista e da interface, foi usado o método funcional.
  
  # IMPLEMENTAÇÕES EXTRAS: 
-  Além do programa pedido, adicionei a função EXCLUIR PESSOA, para facilitar na organização do projeto.
+  Além do programa pedido, adicionei a função EXCLUIR PESSOA, para facilitar na organização do projeto e para complementar com uma função que considero indispensável.
